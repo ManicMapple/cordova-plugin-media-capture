@@ -1,6 +1,6 @@
 ---
 title: Media Capture
-description: Capture audio, video, and images.
+description: Capture audio, video, and images. with sound
 ---
 <!--
 # license: Licensed to the Apache Software Foundation (ASF) under one
