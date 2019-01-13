@@ -107,6 +107,11 @@ xmlns:rim="http://www.blackberry.com/ns/widgets"
         <framework src="CoreGraphics.framework" />
         <framework src="MobileCoreServices.framework" />
 
+        <preference name="ALBUM_USAGE_DESCRIPTION" default=" " />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+            <string>$ALBUM_USAGE_DESCRIPTION</string>
+        </config-file>
+
     </platform>
 
     <!-- windows -->

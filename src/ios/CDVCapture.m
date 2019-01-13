@@ -289,6 +289,12 @@
         UISaveVideoAtPathToSavedPhotosAlbum(moviePath, nil, nil, nil);
         NSLog(@"finished saving movie");
     }*/
+
+    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath)) {
+        UISaveVideoAtPathToSavedPhotosAlbum (
+                                                moviePath, nil, nil, nil);
+    }
+
     // create MediaFile object
     NSDictionary* fileDict = [self getMediaDictionaryFromPath:moviePath ofType:nil];
     NSArray* fileArray = [NSArray arrayWithObject:fileDict];
